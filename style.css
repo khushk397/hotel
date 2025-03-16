@@ -1,0 +1,132 @@
+body {
+    font-family: "Exo 2", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+}
+
+#name {
+    width: 140px;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: bisque;
+    font-size: 16px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('front.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#home p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#about, #dining, #room, #contact {
+    padding: 20px;
+    text-align: center;
+}
+
+#about video, #dining img, #room img, #contact img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+#about p, #dining p, #room p, #contact p {
+    font-size: 19px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding-bottom: 13px;
+    border-bottom: 2px solid black;
+}
+
+.social {
+    color: black;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .image {
+        flex-direction: column;
+    }
+
+    #logo, #name {
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #home {
+        padding: 20px;
+    }
+
+    #about, #dining, #room, #contact {
+        padding: 10px;
+    }
+
+    #about p, #dining p, #room p, #contact p {
+        font-size: 16px;
+    }
+}
