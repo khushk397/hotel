@@ -46,6 +46,10 @@ nav ul li a {
     font-size: 16px;
 }
 
+nav ul li a:hover{
+    color: white;
+}
+
 #home {
     display: flex;
     flex-direction: column;
@@ -95,6 +99,10 @@ nav ul li a {
     color: black;
     border-radius: 5px;
     margin: 0 10px;
+}
+
+.social:hover{
+    color: rgb(46, 46, 152);
 }
 
 @media (max-width: 768px) {
